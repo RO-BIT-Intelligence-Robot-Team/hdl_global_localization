@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(hdl_global_localization)
-
+add_definitions(-std=c++14)
+set(CMAKE_CXX_FLAGS "-std=c++14")
 option(ENABLE_TEASER "Build with Teaser++" OFF)
 
 find_package(catkin REQUIRED COMPONENTS
